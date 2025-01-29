@@ -8,13 +8,8 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  int _counter = 0;
+  final AuthService _authService = AuthService(); // Создаем экземпляр
 
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,18 +21,18 @@ class _MainScreenState extends State<MainScreen> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
-              'Вы нажали на кнопку: ',
-            ),
             Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+              '${_authService.getCurrentUser()?.email ?? "Не авторизован"}', // Используем экземпляр
             ),
-            
+            ElevatedButton(
+              child: Text('Перейти на регистрацию'),
+              onPressed: () {
+                Navigator.pushNamed(context, '/sign_in');
+              },
+            ),
           ],
         ),
       ),
-      
     );
   }
 }

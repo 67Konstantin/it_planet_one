@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "638515874961",
+    "project_id": "it-planet-1",
+    "storage_bucket": "it-planet-1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:638515874961:android:3cb473eca7f13ebb444330",
+        "android_client_info": {
+          "package_name": "com.example.it_planet_first"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmsUG2UOzHpDnk6Tnqsi95ZfWfH1WLy7A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
