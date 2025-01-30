@@ -36,5 +36,58 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/image.png
+    - assets/icons/
+    - assets/
+    - assets/icons/bottom_nav_bar/
     - .env
+
+  fonts:
+    - family: KremlinCTT
+      fonts:
+        - asset: assets/fonts/KremlinCTT/KremlinCTT.ttf
+
+    - family: iosevka
+      fonts:
+        - asset: assets/fonts/iosevka/iosevka-regular.ttf
+          weight: 400
+        - asset: assets/fonts/iosevka/iosevka-bold.ttf
+          weight: 700
+        - asset: assets/fonts/iosevka/iosevka-thin.ttf
+          weight: 100
+        - asset: assets/fonts/iosevka/iosevka-light.ttf
+          weight: 300
+        - asset: assets/fonts/iosevka/iosevka-medium.ttf
+          weight: 500
+        - asset: assets/fonts/iosevka/iosevka-semibold.ttf
+          weight: 600
+        - asset: assets/fonts/iosevka/iosevka-extrabold.ttf
+          weight: 800
+        - asset: assets/fonts/iosevka/iosevka-heavy.ttf
+          weight: 900
+        - asset: assets/fonts/iosevka/iosevka-italic.ttf
+          style: italic
+        - asset: assets/fonts/iosevka/iosevka-bolditalic.ttf
+          weight: 700
+          style: italic
+        - asset: assets/fonts/iosevka/iosevka-thinitalic.ttf
+          weight: 100
+          style: italic
+        - asset: assets/fonts/iosevka/iosevka-lightitalic.ttf
+          weight: 300
+          style: italic
+        - asset: assets/fonts/iosevka/iosevka-mediumitalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/iosevka/iosevka-semibolditalic.ttf
+          weight: 600
+          style: italic
+        - asset: assets/fonts/iosevka/iosevka-extrabolditalic.ttf
+          weight: 800
+          style: italic
+        - asset: assets/fonts/iosevka/iosevka-heavyitalic.ttf
+          weight: 900
+          style: italic
+
+    
+
+

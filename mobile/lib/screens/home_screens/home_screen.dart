@@ -10,9 +10,14 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   // Список экранов для каждой вкладки
   static const List<Widget> _screens = <Widget>[
+    // Замените ниже на настоящие экраны:
+    // MainScreen(),
+    // TimeTableScreen(),
     MainScreen(),
-    TimeTableScreen(),
-    Center(child: Text('3')),
+    SecondScreen(),
+    Center(child: Text('Чат')),
+    Center(child: Text('HackTime')),
+    Center(child: Text('Профиль')),
   ];
 
   @override

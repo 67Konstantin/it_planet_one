@@ -1,13 +1,13 @@
   import '/exports.dart';
 
-  class TimeTableScreen extends StatefulWidget {
-    const TimeTableScreen({Key? key}) : super(key: key);
+  class SecondScreen extends StatefulWidget {
+    const SecondScreen({Key? key}) : super(key: key);
 
     @override
-    State<TimeTableScreen> createState() => _TimeTableScreenState();
+    State<SecondScreen> createState() => _SecondScreenState();
   }
 
-  class _TimeTableScreenState extends State<TimeTableScreen> {
+  class _SecondScreenState extends State<SecondScreen> {
     int _counter = 0;
 
     void _incrementCounter() {
@@ -33,8 +33,17 @@
                 '$_counter',
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
-              ElevatedButton(onPressed: (){changeTheme(context);}, child: Text('поменять тему'))
-              
+              // ElevatedButton(onPressed: (){changeTheme(context);}, child: Text('поменять тему'))
+              CustomButton(
+              text: "Поменять тему",
+              onPressed: () {
+                changeTheme(context);
+                _incrementCounter();
+              },
+              textStyle: TextStyle(
+                fontSize: 24,
+              ),
+            ),
             ],
           ),
         ),

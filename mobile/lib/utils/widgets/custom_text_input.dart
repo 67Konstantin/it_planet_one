@@ -50,8 +50,8 @@ class CustomTextInputState extends State<CustomTextInput> {
       borderColor = theme.primaryColor.withAlpha(200);
       borderWidth = 1.0;
     } else {
-      fillColor = theme.dividerColor.withAlpha(7);
-      borderColor = theme.dividerColor.withAlpha(80);
+      fillColor = theme.colorScheme.tertiaryFixed.withAlpha(7);
+      borderColor = theme.colorScheme.tertiaryFixed.withAlpha(200);
       borderWidth = 1.0;
     }
 
@@ -74,7 +74,7 @@ class CustomTextInputState extends State<CustomTextInput> {
                 ? theme.colorScheme.error
                 : _isFocused
                     ? theme.primaryColor
-                    : theme.dividerColor,
+                    : theme.colorScheme.tertiaryFixed,
           ),
           filled: true,
           fillColor: fillColor,

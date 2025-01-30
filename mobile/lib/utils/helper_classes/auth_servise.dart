@@ -1,5 +1,4 @@
 import '/exports.dart';
-import 'package:github_sign_in_plus/github_sign_in_plus.dart';
 
 class AuthService {
   final FirebaseAuth _auth = FirebaseAuth.instance;

@@ -24,11 +24,34 @@ class _MainScreenState extends State<MainScreen> {
             Text(
               '${_authService.getCurrentUser()?.email ?? "Не авторизован"}', // Используем экземпляр
             ),
-            ElevatedButton(
-              child: Text('Перейти на регистрацию'),
+            // ElevatedButton(
+            //   child: Text('Перейти на регистрацию'),
+            //   onPressed: () {
+            //     Navigator.pushNamed(context, '/sign_in');
+            //   },
+            // ),
+            SizedBox(height: 16),
+
+            CustomButton(
+              text: "Просто кнопка",
+              onPressed: () {
+                print("Нажата кнопка!");
+              },
+              textStyle: TextStyle(
+                fontSize: 24,
+              ),
+              isDashed: true,
+            ),
+            SizedBox(height: 24),
+            CustomButton(
+              text: "Регистрация",
               onPressed: () {
                 Navigator.pushNamed(context, '/sign_in');
+
               },
+              textStyle: TextStyle(
+                fontSize: 24,
+              ),
             ),
           ],
         ),
